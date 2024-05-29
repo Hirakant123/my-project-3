@@ -4,7 +4,7 @@
 
 - **basically whirpool is an a home appliance compony, and i have build this site by myself using only html and css with the responsiveness and it is a clickable**.
 
-- <img width="450" alt="Screenshot 2022-06-10 at 3 12 26 PM" src=""C:\Users\admin\Desktop\project screenshots\scrshot1.png"">
+- <img width="450" alt="Screenshot 2022-06-10 at 3 12 26 PM" src="C:\Users\admin\Desktop\project screenshots\scrshot1.png">
 
 
 
