@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<style>
+  .navbar>ul>.login>a>img {
+    /* border:1px solid red; */
+    margin-right: 10px;
+
+  }
+
+  /* this is for small screen */
+
+  @media screen and (min-width: 350px) and (max-width:767px) {
+
+    #slider {
+      width: 100%;
+      /* border:1px solid red; */
+    }
+
+    #slider>#images {
+      height: 200px;
+    }
+
+    #div1 {
+      /* border:1px solid rgb(0, 0, 0); */
+      width: 100%;
+      /* flex-wrap: wrap; */
+      display: grid;
+      grid-template-columns: repeat(1,200px);
+      /* display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center; */
+
+
+    }
+
+    .div2 {
+      display: grid;
+      grid-template-columns: repeat(1, 300px);
+      justify-content: center;
+
+    }
+
+    #discover {
+      display: grid;
+      grid-template-columns: repeat(1, 300px);
+      justify-content: center;
+      /* border:1px solid red; */
+      width: 100%;
+      gap: 20px;
+
+    }
+
+    #discover>div {
+      /* border:1px solid black; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: -50px;
+
+    }
+
+    .devider1 {
+      display: none;
+    }
+
+    #ifram {
+      /* border:1px solid rgb(255, 5, 5); */
+      width: 100%;
+    }
+
+    .inner-div {
+      /* border:1px solid rgb(5, 2, 2); */
+      flex-wrap: wrap;
+      display: grid;
+      /* flex-direction: column;
+   justify-content: center;
+   align-items: center; */
+      grid-template-columns: 1;
+      height: 400px;
+      /* justify-content: center;
+   align-items: center; */
+
+    }
+
+    .inner-div>p {
+      margin-left: -50px;
+    }
+
+    .inner-div>button {
+      margin-left: 12px;
+    }
+
+    #mini-container {
+      /* border:1px solid rgb(0, 255, 0); */
+      width: 100%;
+      height: 2000px;
+      /* flex-wrap: wrap; */
+      display: grid;
+
+      grid-template-columns: repeat(1, 300px);
+      justify-content: center;
+      align-items: center;
+      margin-bottom: -500px;
+
+
+    }
+
+    #mini-container>#para2 {
+      /* border:1px solid rgb(0, 0, 0); */
+      margin-top: -100px;
+
+    }
+
+
+    #register-div {
+      /* border:1px solid rgb(0, 0, 0); */
+      height: 1000px;
+      width: 100%;
+    }
+
+    .navbar ul{
+      /* border:1px solid red; */
+      display: none;
+    }
+
+
+
+
+  }
+
+/* this is for medium screen like tab */
+
+  @media screen and (min-width: 768px) and (max-width:1023px) {
+      
+
+    #slider {
+      width: 100%;
+      /* border:1px solid red; */
+    }
+
+     
+    #div1 {
+      /* border:1px solid rgb(0, 0, 0); */
+     display: grid; 
+     grid-template-columns: repeat(2,100px);
+     width: 100%;
+    }
+
+    #div1 >div {
+      margin-left:-80px;
+    }
+
+    .div2 {
+      display: grid;
+      grid-template-columns: repeat(2, 300px);
+      justify-content: center;
+
+    }
+
+    #discover {
+      display: grid;
+      grid-template-columns: repeat(2,300px);
+      
+     
+      /* border:1px solid red; */
+      width: 100%;
+      
+
+    }
+   
+    
+    #discover>div{
+      /* border:1px solid rgb(0, 0, 0); */
+      gap:30px;
+      width:300px;
+      margin-right: 20px;
+      height:670px;
+      margin-bottom: 20px;
+    }
+
+    #discover>div>img{
+    /* border:1px solid red; */
+    height:300px ;
+    width :300px;
+     
+}
+
+#ifram {
+      width: 100%;
+    }
+
+
+    .inner-div {
+     
+      flex-wrap: wrap;
+      display: grid;
+    
+      grid-template-columns: 1;
+      height: 400px;
+      
+
+    }
+
+  
+    .inner-div>p {
+      margin-left: -50px;
+    }
+
+    #mini-container {
+      /* border:1px solid rgb(0, 255, 0); */
+      width: 100%;
+      height: 2000px;
+      /* flex-wrap: wrap; */
+      display: grid;
+
+      grid-template-columns: repeat(2, 300px);
+      justify-content: center;
+      align-items: center;
+      margin-bottom: -500px;
+
+
+    }
+
+
+  
+
+
+
+
+  }
+</style>
+
+<body>
+
+  <div id="container">
+
+    <div class="navbar">
+      <div class="logo"><img src="whirlpool.logo.png" alt="">
+      </div>
+      <ul>
+        <li><a href="Ref.html">Refrigerator</a> </li>
+        <li><a href="Machine.html">Washing Machines</a> </li>
+        <li><a href="Micro2.html">Microwaves</a> </li>
+        <li class="login"><a href="loginpage.html"><img
+              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg"
+              alt="">Login</a></li>
+        <li><a href="cart.html"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBJWwnh9QdBmZzmeiYMRPDKNWnks_8rqQeAS4-I3FXY5ErVg6zuFzXZJbro8G-IF1_o6o&usqp=CAU"
+              height="30px" width="30px" alt=""></a> </li>
+      </ul>
+    </div>
+
+    <span class="devider3"></span>
+
+    <div id="slider">
+
+      <div id="images">
+
+        <input type="radio" name="slide" id="img1" checked>
+        <input type="radio" name="slide" id="img2">
+        <input type="radio" name="slide" id="img3">
+        <input type="radio" name="slide" id="img4">
+
+        <img
+          src="https://whirlpoolindia.vtexassets.com/assets/vtex.file-manager-graphql/images/7778f15c-cad3-4aa6-af4d-4eb2cec27bb6___fbb45fbedc04927111f92d0076c135c7.gif"
+          class="m1" alt="img1">
+        <img src="img3.jpg" class="m2" alt="img2">
+        <img src="img5.jpg" class="m3" alt="img3">
+        <img src="img4.jpg" class="m4" alt="img4">
+      </div>
+
+      <div id="dots">
+        <label for="img1"></label>
+        <label for="img2"></label>
+        <label for="img3"></label>
+        <label for="img4"></label>
+
+      </div>
+    </div>
+
+
+    <div id="div1">
+
+      <div>
+        <div class="para1"><img src="bus.svg" alt="busimg" height="40px" width="40px"></div>
+
+        <p><span>Free Delivery in 48 hrs</span><br>and Express Installation*</p>
+      </div>
+
+
+      <div>
+        <div class="para1"><img src="return img.svg" alt="img2" height="40px" width="40px"></div>
+
+        <p> <span>‘No Questions Asked’ Returns</span><br>Within 7 days*</p>
+      </div>
+
+      <div>
+        <div class="para1"><img src="offerimg.svg" alt="" height="40px" width="40px"></div>
+
+        <p><span>Exchange Offer</span><br>Up to ₹ 9900/- off on Exchange*</p>
+
+      </div>
+
+      <div>
+        <div class="para1"><img src="primimg.svg" alt="" height="40px" width="40px"></div>
+
+        <p><span>Premium Care</span><br>Same day service visit</p>
+      </div>
+
+    </div>
+
+
+
+    <div class="tital1">
+      <div class="cls1"></div>
+      <h3 class="cls2">Best Selling Refrigerators</h3>
+    </div>
+
+    <div class="div2">
+
+      <div>
+
+        <a href="refrigerator.html"><img
+            src="https://whirlpoolindia.vtexassets.com/arquivos/ids/165817-220-220?v=638136821146070000&width=220&height=220&aspect=true"
+            alt=""></a>
+
+        <span class="devider"></span>
+        <h5>Intellifresh Pro 327L 2 Star Convertible Frost Free Double-Door Refrigerator</h5>
+        <h5><strike style="color: rgb(80, 85, 78);">MRP 45,000</strike><span>25% OFF</span></h5>
+        <h2>₹36,760</h2>
+        <ul>
+          <li>No Cost EMI X 18 Months*</li>
+          <li>10% Bank Cashback upto ₹5000*T&C</li>
+          <li>Get Exchange up to ₹ 9900/-*T&C</li>
+
+        </ul>
+
+
+      </div>
+
+
+      <div>
+        <img
+          src="https://whirlpoolindia.vtexassets.com/arquivos/ids/159402-220-220?v=637789977366600000&width=220&height=220&aspect=true"
+          alt="">
+        <span class="devider"></span>
+        <h5>Wseries 677L Convertible Frost Free Four-Door Refrigerator with Water Dispenser</h5>
+        <h5><strike style="color: rgb(80, 85, 78);">MRP 2,55,000</strike><span>45% OFF</span></h5>
+        <h2>₹1,78,500</h2>
+        <ul>
+
+          <li>No Cost EMI X 24 Months*</li>
+          <li>15% Bank Cashback upto ₹7500*T&</li>
+          <li>Get Exchange up to ₹ 9900/-*T&C</li>
+        </ul>
+
+      </div>
+
+
+
+      <div>
+        <img
+          src="https://whirlpoolindia.vtexassets.com/arquivos/ids/162645-220-220?v=637933732683300000&width=220&height=220&aspect=true"
+          alt="">
+        <span class="devider"></span>
+        <h5>Wseries 570L Frost-Free Side by Side Refrigerator</h5>
+        <h5><strike style="color: rgb(80, 85, 78);">MRP 1,17,750</strike><span>52% OFF</span></h5>
+        <h2>₹50,460</h2>
+        <ul>
+
+          <li>No Cost EMI X 24 Months*</li>
+          <li>15% Bank Cashback upto ₹7500*T&</li>
+          <li>Get Exchange up to ₹ 9900/-*T&C</li>
+        </ul>
+
+      </div>
+
+
+
+
+      <div>
+        <img
+          src="https://whirlpoolindia.vtexassets.com/arquivos/ids/159452-220-220?v=637795124056800000&width=220&height=220&aspect=true"
+          alt="">
+        <span class="devider"></span>
+        <h5>Intellifresh Pro 325L 3 Star Elite+ Frost Free Bottom-Mount Refrigerator</h5>
+        <h5><strike style="color: rgb(80, 85, 78);">MRP 49,300</strike><span>33% OFF</span></h5>
+        <h2>₹23,650</h2>
+        <ul>
+          <li>No Cost EMI X 18 Months*</li>
+          <li>10% Bank Cashback upto ₹5000*T&C</li>
+          <li>Get Exchange up to ₹ 9900/-*T&C</li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+    <!-- start second class -->
+
+    <div class="tital1">
+      <div class="cls1"></div>
+      <h3 class="cls2">Top Washing Machines</h3>
+    </div>
+
+
+    <div class="div2">
+
+
+      <div>
+        <a href="Wmachine.html"> <img
+            src="https://whirlpoolindia.vtexassets.com/arquivos/ids/161308-800-auto?v=637913990768030000&width=800&height=auto&aspect=true"
+            alt=""></a>
+        <span class="devider"></span>
+        <h5>8 Kg Semi Automatic with Extra Soak time - Ace Super Soa </h5>
+        <h5><strike style="color: rgb(80, 85, 78);">MRP 16,700</strike><span>22% OFF</span></h5>
+        <h2>₹13,020</h2>
+        <ul>
+          <li>No Cost EMI X 6 Months*</li>
+          <li>5% Bank Cashback upto ₹2500*T&C</li>
+          <li>Get Exchange up to ₹ 9900/-*T&C</li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+        <img
+          src="https://whirlpoolindia.vtexassets.com/arquivos/ids/167788-800-auto?v=638379679316170000&width=800&height=auto&aspect=true"
+          alt="">
+        <span class="devider"></span>
+        <h5>Xpert Care 7kg 5 Star Front Load Washing Machine with in-built Heater</h5>
+        <h5><strike style="color: rgb(80, 85, 78);">MRP 45,100</strike><span>22% OFF</span></h5>
+        <h2>₹35,270</h2>
+        <ul>
+          <li>No Cost EMI X 18 Months*</li>
+          <li>10% Bank Cashback upto ₹5000*T&C</li>
+          <li>Get Exchange up to ₹ 9900/-*T&C</li>
+
+        </ul>
+
+      </div>
+
+
+
+      <div>
+        <img
+          src="https://whirlpoolindia.vtexassets.com/arquivos/ids/167786-220-220?v=638378872335800000&width=220&height=220&aspect=true"
+          alt="">
+        <span class="devider"></span>
+        <h5>Whitemagic Royal 7kg 5 Star Fully Automatic Top Load Washing Machine</h5>
+        <h5><strike style="color: rgb(80, 85, 78);">MRP 19,550</strike><span>33% OFF</span></h5>
+        <h2>₹14,790</h2>
+        <ul>
+          <li>No Cost EMI X 12 Months*</li>
+          <li>5% Bank Cashback upto ₹2500*T&C</li>
+          <li>Get Exchange up to ₹ 9900/-*T&C</li>
+
+        </ul>
+
+      </div>
+
+
+
+      <div>
+        <img
+          src="https://whirlpoolindia.vtexassets.com/arquivos/ids/167574-220-220?v=638320917724870000&width=220&height=220&aspect=true"
+          alt="">
+        <span class="devider"></span>
+        <h5>Xpert Care 7kg 5 Star Front-Load Washing Machine with Ozone Air </h5>
+        <h5><strike style="color: rgb(80, 85, 78);">MRP 47,100</strike><span>22% OFF</span></h5>
+        <h2>₹36,540</h2>
+        <ul>
+          <li>No Cost EMI X 12 Months*</li>
+          <li>5% Bank Cashback upto ₹2500*T&C</li>
+          <li>Get Exchange up to ₹ 9900/-*T&C</li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+    <!-- start third class -->
+
+
+    <div class="tital1">
+      <div class="cls1"></div>
+      <h3 class="cls2">Best Selling Microwaves </h3>
+    </div>
+
+
+    <div class="div2">
+
+
+      <div>
+        <img
+          src="https://whirlpoolindia.vtexassets.com/arquivos/ids/156062-800-auto?v=637774141531330000&width=800&height=auto&aspect=true"
+          alt="">
+        <span class="devider"></span>
+        <h5>30L-OTG (20% Faster Cooking) best Microwaves </h5>
+        <h5><strike style="color: rgb(80, 85, 78);">MRP 10,790</strike><span>34% OFF</span></h5>
+        <h2>₹7,110</h2>
+        <ul>
+          <li>No Cost EMI X 6 Months*</li>
+          <li>5% Bank Cashback upto ₹2500*T&C</li>
+
+
+        </ul>
+
+      </div>
+
+
+
+
+      <div>
+
+        <a href="micro.html"><img
+            src="https://whirlpoolindia.vtexassets.com/arquivos/ids/161142-800-auto?v=637894860905770000&width=800&height=auto&aspect=true"
+            alt=""></a>
+
+        <span class="devider"></span>
+        <h5>Magicook Pro 29L Convection Microwave (Air-Fryer with Baking Plate & Rotisserie) </h5>
+        <h5><strike style="color: rgb(80, 85, 78);">MRP 23,150</strike><span>33% OFF</span></h5>
+        <h2>₹15,490</h2>
+        <ul>
+          <li>No Cost EMI X 6 Months*</li>
+          <li>5% Bank Cashback upto ₹2500*T&C</li>
+        </ul>
+
+      </div>
+
+
+
+
+      <div>
+        <img
+          src="https://whirlpoolindia.vtexassets.com/arquivos/ids/156092-800-auto?v=637774177836570000&width=800&height=auto&aspect=true"
+          alt="">
+        <span class="devider"></span>
+        <h5>Magicook Pro 25L Grill Microwave (24 Auto-Cook Menus) </h5>
+        <h5><strike style="color: rgb(80, 85, 78);">MRP 11,375</strike><span>12% OFF</span></h5>
+        <h2>₹9,990</h2>
+        <ul>
+          <li>No Cost EMI X 6 Months*</li>
+          <li>5% Bank Cashback upto ₹2500*T&C</li>
+
+
+        </ul>
+
+      </div>
+
+
+
+
+      <div>
+        <img
+          src="https://whirlpoolindia.vtexassets.com/arquivos/ids/156063-800-auto?v=637774141543230000&width=800&height=auto&aspect=true"
+          alt="">
+        <span class="devider"></span>
+        <h5>Magicook Pro 20L Solo Microwave (6-Power Levels)</h5>
+        <h5><strike style="color: rgb(80, 85, 78);">MRP 8,775</strike><span>27% OFF</span></h5>
+        <h2>₹6,390</h2>
+        <ul>
+          <li>No Cost EMI X 6 Months*</li>
+          <li>5% Bank Cashback upto ₹2500*T&C</li>
+
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="tital1">
+      <div class="cls1"></div>
+      <h3 class="cls2">Discover Whirlpool </h3>
+    </div>
+
+
+
+    <div id="discover">
+
+      <div>
+        <img src="https://www.mother.ly/wp-content/uploads/2021/10/origin-4366.jpg" alt="" height="300px" width="400px">
+        <h5> Everyday, Care</h5>
+        <h3>Behind every chore is an act of love</h3>
+        <p>Whirlpool Brand exists to help families thrive. We believe the simple acts of care they give, day in and day
+          out, have the power to change the world.</p>
+      </div>
+
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAPDiQkDnsTFWEJjE7IYi8hcMAcSyr5ZW4bfi8IV8jsIkVv0NwcDdSbXVLu9IopM5xrgE&usqp=CAU"
+          height="300px" width="400px" alt="">
+        <h5>About Us</h5>
+        <h3>Over 112 years of globle expertise</h3>
+        <p>Embracing the brand philosophy of Every Day Care, Whirlpool is committed towards providing solutions that are
+          meaningful and advanced with consumers at the heart</p>
+      </div>
+
+      <div>
+        <img src="https://life2life.com.my/storage/app/uploads/public/61f/58d/35c/61f58d35c64ed689243171.png"
+          height="300px" width="400px" alt="">
+        <h5>Sustainability</h5>
+        <h3>Improving Life at home Sustainably</h3>
+        <p>Our commitment towards improving life at home is brought to life through the choice and investment we make
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- embeded videi -->
+
+
+    <div class="teaser">
+      <h2>Know more about our Premium Range of Refrigerators</h2>
+    </div>
+
+    <span class="devider1"></span>
+
+    <div id="ifram"><iframe width="100%" height="315"
+        src="https://www.youtube.com/embed/duQ0uSHzH-s?si=Rm81r1Yx9zcZ_SQw" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+
+
+    <div id="register-div">
+      <div class="inner-div">
+        <h5>Receive our offers, releases and promos!</h5>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="E-mail">
+        <p>By subscribing the newsletter, you agree to our<br> <a href="#">Terms and Conditions.</a></p>
+        <button>Register</button>
+        </a>
+      </div>
+
+
+      <div id="mini-container">
+
+
+
+        <div class="image">
+          <div class="image1">
+            <img src="whirlpool.logo.png" height="40px" width="180px" alt="">
+            <h4>Follow us:</h4>
+          </div>
+
+          <div class="image2">
+            <img src="https://whirlpoolindia.vtexassets.com/arquivos/facebook-whirlpool-footer-2019.png.png"
+              height="25px" width="15px" alt="">
+            <img src="https://whirlpoolindia.vtexassets.com/arquivos/twitter-whirlpool-footer-2019.png.png"
+              height="20px" width="25px" alt="">
+            <img src="https://whirlpoolindia.vtexassets.com/arquivos/instagram-whirlpool-footer-2019.png.png"
+              height="25px" width="25px" alt="">
+            <img src="https://whirlpoolindia.vtexassets.com/arquivos/youtube-whirlpool-footer-2019.png.png"
+              height="25px" width="25px" alt="">
+          </div>
+
+
+        </div>
+
+        <div id="para">
+          <h3>Discover Whirlpool</h3>
+          <p>
+            The Company<br>
+            The Brand<br>
+            Export<br>
+            Media Room<br>
+            Careers<br>
+            Investors<br>
+            Sustainability<br>
+            Awards and Recognition</p>
+        </div>
+
+
+        <div id="para">
+          <h3>Whirlpool Products</h3>
+          <p>
+            Refrigerators<br>
+            Washing Machine<br>
+            Air Conditioners<br>
+            Microwaves<br>
+            Dishwasher</p>
+        </div>
+
+
+        <div id="para">
+          <h3>Service & Support</h3>
+          <p>
+            Customer Support<br>
+            Track Order<br>
+            Shipping Policy<br>
+            Request Service Online<br>
+            Ticket Status</p>
+        </div>
+
+
+
+        <div id="para2">
+          <h3>Contact Us</h3>
+
+          <div class="cont">
+            <img
+              src="https://whirlpoolindia.vtexassets.com/assets/vtex/assets-builder/whirlpoolindia.whirlpoolindia-store/1.1.116/images/Footer-icon-mail___327d4f120c3f31d37aee83c0dc4c2c6a.png"
+              alt="">
+            <p><span>Email</span><br>helpdeskindia@whirlpool.com</p>
+          </div>
+
+
+          <div class="cont">
+            <img
+              src="https://whirlpoolindia.vtexassets.com/assets/vtex/assets-builder/whirlpoolindia.whirlpoolindia-store/1.1.116/images/Footer-icon-tel___29cc47ba8318e68f117e3a66fd8d90ad.png"
+              alt="">
+            <p><span>Call</span><br>1800 208 1800 (Toll Free)</p>
+          </div>
+
+          <div class="cont">
+            <img
+              src="https://whirlpoolindia.vtexassets.com/assets/vtex/assets-builder/whirlpoolindia.whirlpoolindia-store/1.1.116/images/Footer-icon-whatsapp___8b64280befb7e138262267787136e4d3.png"
+              alt="">
+            <p><span>Whatsapp</span>+91 9667427767</p>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- container end -->
+    </div>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
